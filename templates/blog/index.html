@@ -10,6 +10,7 @@
                  <th>Title</th>
                  <th>Owner</th>
                  <th>Commentaries</th>
+                 <th>Creation date</th>
              </tr>
             {% for post in post_list %}
                 <tr>
@@ -27,6 +28,9 @@
                     </td>
                     <td>
                         {{ post.commentaries.count }}
+                    </td>
+                    <td>
+                        {{ post.created_at }}
                     </td>
                 </tr>
                 {% endfor %}
